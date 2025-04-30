@@ -7,7 +7,7 @@ type JobListProps = {
 export default function ExperienceCard({ jobList }: JobListProps) {
   return (
     <>
-      <div className=" cursor-default relative my-20 pl-5">
+      <div className="cursor-default relative my-20 pl-5">
         <svg
           width="8"
           height="8"
