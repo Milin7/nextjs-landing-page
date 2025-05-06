@@ -1,4 +1,4 @@
-import { JobItem, SectionItem } from "../types";
+import { EducationItem, JobItem, SectionItem } from "../types";
 
 export const jobs: JobItem[] = [
   {
@@ -42,5 +42,15 @@ export const sections: SectionItem[] = [
   {
     id: 6,
     title: "Projects",
+  },
+];
+
+export const education: EducationItem[] = [
+  {
+    id: 7,
+    title: "Education",
+    name: "Universidad Autónoma de Coahuila",
+    degree: "Bachelor in Marketing",
+    date: "2020-2023",
   },
 ];

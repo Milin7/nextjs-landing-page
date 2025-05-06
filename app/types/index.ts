@@ -14,3 +14,10 @@ export interface SectionItem {
   id: number;
   title: string;
 }
+export interface EducationItem {
+  id: number;
+  title: string;
+  name: string;
+  degree: string;
+  date: string;
+}

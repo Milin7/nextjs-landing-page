@@ -1,8 +1,9 @@
 export default function SideBar() {
   return (
-    <div className="mt-10 ml-10  col-span-1">
+    <div className="mt-10 ml-10 m-10  col-span-1">
       <div className=" fixed  text-landing-white col-span-1 grid grid-cols-1 grid-rows-10 h-96">
-        <h1 className="">Life resume</h1>
+        {/* h1 SHOULD BE REPLACED for IM logo */}
+        <h1 className="">Life resume </h1>
         <h2 className=" font-bold text-3xl tracking-wider">Isaac Martínez</h2>
         <span className=" uppercase tracking-normal text-lg pt-1">
           Front End Developer
