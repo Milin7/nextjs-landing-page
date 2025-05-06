@@ -16,9 +16,6 @@ function ExperiencePage() {
           );
         })}
       </div>
-      <div className=" text-landing-neon text-2xl mt-10">
-        <Link href="#section1">Section 1</Link>
-      </div>
     </>
   );
 }

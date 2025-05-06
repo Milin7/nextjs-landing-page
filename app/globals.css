@@ -7,15 +7,37 @@
   --tracking-wide-5: 5px;
   --tracking-wide-10: 10px;
   --tracking-wide-50: 50px;
+  --border-width-1: 1.9px;
 }
+/* Scroll Snapping */
 
+/* html {
+  scroll-behavior: smooth;
+}
+.scroller {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+.scroller section {
+  height: 100vh;
+  scroll-snap-align: start;
+} */
+*/
 /* Animación para el SVG dentro del componente ExperienceCard */
-.relative svg {
-  transition: all 0.3s ease-in-out;
-}
 
+.relative > svg {
+  transition: all 0.35s ease-in-out;
+}
 .relative:hover > svg {
   transform: scale(2);
+  filter: drop-shadow(0 0 5px rgba(184, 206, 0, 0.95));
+}
+.container {
+  transition: all 0.35s ease-in-out;
+}
+.container:hover {
+  transform: scale(1.2);
+  translate: 60px;
   filter: drop-shadow(0 0 5px rgba(184, 206, 0, 0.95));
 }
 

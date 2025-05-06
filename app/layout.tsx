@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "./components/CustomCursor";
 import SideBar from "./components/SideBar";
-import { jobs, sections } from "./data/db";
-import SectionCard from "./components/SectionCard";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -22,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`bg-landing-grey ${montserrat.className} antialiased`}>
+    <html lang="en" className="h-full">
+      <body
+        className={`bg-landing-grey cursor-default ${montserrat.className} antialiased min-h-screen h-full`}
+      >
         {/* <CustomCursor /> */}
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 h-full">
           <SideBar />
-          <div className=" col-span-2">{children}</div>
+          <div className="col-span-2 h-full">{children}</div>
         </div>
       </body>
     </html>

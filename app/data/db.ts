@@ -33,11 +33,11 @@ export const jobs: JobItem[] = [
 export const sections: SectionItem[] = [
   {
     id: 4,
-    title: "Experience",
+    title: "About me",
   },
   {
     id: 5,
-    title: "About me",
+    title: "Experience",
   },
   {
     id: 6,

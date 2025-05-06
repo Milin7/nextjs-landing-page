@@ -27,27 +27,41 @@ export default function SideBar() {
               Front End Developer
             </Typography>
           </div>
-          <Link href="#about-me">
-            <Typography variant="start" component="div" mt="24">
-              <div className="border-t-2 border-landing-neon mt-4 w-20 ml-16 mr-2"></div>
+          <Link href="#Aboutme">
+            <Typography
+              className="container mb-2"
+              variant="start"
+              component="div"
+              mt="24"
+            >
+              <div className="border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
               <Typography component="h3" variant="heading4" color="neon">
                 about
               </Typography>
             </Typography>
           </Link>
 
-          <Typography variant="start" component="div">
-            <div className="border-t-2 border-landing-neon mt-4 w-20 ml-16 mr-2"></div>
-            <Typography component="h3" variant="heading4" color="neon">
-              experience
+          <Link href="#Experience">
+            <Typography
+              className="container mb-2"
+              variant="start"
+              component="div"
+            >
+              <div className="border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
+              <Typography component="h3" variant="heading4" color="neon">
+                experience
+              </Typography>
             </Typography>
-          </Typography>
-          <Typography variant="start" component="div">
-            <div className="border-t-2 border-landing-neon mt-4 w-20 ml-16 mr-2"></div>
-            <Typography component="h3" variant="heading4" color="neon">
-              Projects
+          </Link>
+
+          <Link href="#Projects">
+            <Typography className="container" variant="start" component="div">
+              <div className="border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
+              <Typography component="h3" variant="heading4" color="neon">
+                Projects
+              </Typography>
             </Typography>
-          </Typography>
+          </Link>
         </div>
       </div>
 
