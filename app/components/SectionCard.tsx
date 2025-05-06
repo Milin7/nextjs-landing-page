@@ -9,9 +9,9 @@ type SectionCardProps = {
 
 export default function SectionCard({ title }: SectionCardProps) {
   return (
-    <>
+    <div className="relative h-full w-full">
       {title === "Experience" && (
-        <div className="mt-10 py-20 mr-10">
+        <div className="mt-10 py-5 mr-10">
           <div className=" border-2 text-white border-landing-neon rounded-xl p-7">
             <Typography component="h2" variant="heading2" color="neon" mb="8">
               {title}
@@ -19,13 +19,6 @@ export default function SectionCard({ title }: SectionCardProps) {
             {jobs.map((job) => (
               <ExperienceCard key={job.id} jobList={job} />
             ))}
-            <Typography
-              className="absolute bottom-0 right-0"
-              component="div"
-              variant="heading1"
-            >
-              {title}
-            </Typography>
           </div>
           <div className="relative p-7">
             {education.map((school) => (
@@ -60,16 +53,49 @@ export default function SectionCard({ title }: SectionCardProps) {
         </div>
       )}
       {title === "About me" && (
-        <div className="mt-10 mr-10">
-          <div className="border-2 text-white border-landing-neon rounded-xl p-7">
-            <Typography component="h2" variant="heading2" color="neon" mb="8">
+        <>
+          <div id="about-me" className=" mt-10 mr-10">
+            <div className=" text-white p-7">
+              <Typography component="h2" variant="heading2" color="neon" mb="8">
+                {title}
+              </Typography>
+              <Typography variant="paragraph" color="white">
+                Your about me content goes here
+              </Typography>
+              <br />
+              <br />
+
+              <br />
+
+              <br />
+
+              <br />
+
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <br />
+
+              <Typography variant="paragraph" color="white">
+                Your about me content goes here
+              </Typography>
+            </div>
+            <Typography
+              className="absolute w-full right-155"
+              component="div"
+              variant="heading1"
+            >
               {title}
             </Typography>
-            <Typography variant="paragraph" color="white">
-              Your about me content goes here
-            </Typography>
           </div>
-        </div>
+        </>
       )}
       {title === "Projects" && (
         <div className="mt-10 mr-10">
@@ -83,6 +109,6 @@ export default function SectionCard({ title }: SectionCardProps) {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }

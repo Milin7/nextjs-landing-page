@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-landing-grey ${montserrat.className} antialiased`}>
         {/* <CustomCursor /> */}
-        <div className="grid relative grid-cols-3">
+        <div className="grid grid-cols-3">
           <SideBar />
           <div className=" col-span-2">{children}</div>
         </div>

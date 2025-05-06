@@ -14,6 +14,7 @@ type Props = {
     | "heading2"
     | "heading3"
     | "heading4"
+    | "mainHeading"
     | "paragraph"
     | "text-sm"
     | "text-base"
@@ -21,7 +22,9 @@ type Props = {
     | "text-xl"
     | "text-2xl"
     | "text-3xl"
-    | "text-4xl";
+    | "text-4xl"
+    | "center"
+    | "start";
 };
 
 const colorStyles = {
@@ -31,11 +34,11 @@ const colorStyles = {
 };
 
 const variantStyles = {
-  heading1:
-    "text-9xl opacity-10 font-extrabold tracking-wide-20 w-fit uppercase",
-  heading2: "text-2xl tracking-wider w-fit uppercase ",
-  heading3: "text-xl font-semibold tracking-wider w-fit ",
-  heading4: "text-lg tracking-wider w-fit uppercase",
+  heading1: "text-9xl opacity-10 font-extrabold tracking-wide-50 uppercase",
+  heading2: "text-2xl tracking-wider uppercase ",
+  heading3: "text-xl font-semibold tracking-wider ",
+  heading4: "text-xl  uppercase",
+  mainHeading: "text-xl tracking-wide-5 uppercase",
   paragraph: "text-base leading-relaxed",
   "text-sm": "text-sm",
   "text-base": "text-base",
@@ -44,6 +47,8 @@ const variantStyles = {
   "text-2xl": "text-2xl",
   "text-3xl": "text-3xl",
   "text-4xl": "text-4xl",
+  center: "flex justify-center",
+  start: "flex justify-start",
 };
 
 const marginBottomStyles = {

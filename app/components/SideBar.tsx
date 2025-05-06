@@ -1,28 +1,65 @@
+import Link from "next/link";
+import Typography from "./Typography";
+
 export default function SideBar() {
   return (
-    <div className="mt-10 ml-10 m-10  col-span-1">
-      <div className=" fixed  text-landing-white col-span-1 grid grid-cols-1 grid-rows-10 h-96">
+    <div className="relative mt-10 ml-10 m-10  col-span-1">
+      <div className="fixed text-landing-white col-span-1 grid grid-cols-1 grid-rows-10 h-96">
         {/* h1 SHOULD BE REPLACED for IM logo */}
-        <h1 className="">Life resume </h1>
-        <h2 className=" font-bold text-3xl tracking-wider">Isaac Martínez</h2>
-        <span className=" uppercase tracking-normal text-lg pt-1">
-          Front End Developer
-        </span>
-        <div className="  row-span-8 text-landing-neon mt-20">
-          <div className=" grid grid-cols-6 mb-2">
-            <div className=" col-span-3 border-t-2 border-landing-neon mt-2.5 w-20 ml-16"></div>
-            <span className=" col-span-3 uppercase ">about</span>
+        <div>
+          <Typography
+            component="h1"
+            variant="mainHeading"
+            className="flex justify-center"
+          >
+            Life resume{" "}
+          </Typography>
+          <div>
+            <Typography
+              component="h2"
+              mt="4"
+              variant="heading3"
+              className="text-4xl"
+            >
+              Isaac Martínez
+            </Typography>
+            <Typography component="span" mt="2" mb="32" variant="mainHeading">
+              Front End Developer
+            </Typography>
           </div>
-          <div className=" grid grid-cols-6 mb-2">
-            <div className=" col-span-3 border-t-2 border-landing-neon mt-2.5 w-20 ml-16"></div>
-            <span className=" col-span-3 uppercase">Experience</span>
-          </div>
-          <div className=" grid grid-cols-6 mb-2">
-            <div className=" col-span-3 border-t-2 border-landing-neon mt-2.5 w-20 ml-16"></div>
-            <span className=" col-span-3 uppercase">Projects</span>
-          </div>
+          <Link href="#about-me">
+            <Typography variant="start" component="div" mt="24">
+              <div className="border-t-2 border-landing-neon mt-4 w-20 ml-16 mr-2"></div>
+              <Typography component="h3" variant="heading4" color="neon">
+                about
+              </Typography>
+            </Typography>
+          </Link>
+
+          <Typography variant="start" component="div">
+            <div className="border-t-2 border-landing-neon mt-4 w-20 ml-16 mr-2"></div>
+            <Typography component="h3" variant="heading4" color="neon">
+              experience
+            </Typography>
+          </Typography>
+          <Typography variant="start" component="div">
+            <div className="border-t-2 border-landing-neon mt-4 w-20 ml-16 mr-2"></div>
+            <Typography component="h3" variant="heading4" color="neon">
+              Projects
+            </Typography>
+          </Typography>
         </div>
-        <div className="row-span-2 flex gap-6">
+      </div>
+
+      {/* <div className=" grid grid-cols-6 mb-2">
+          <div className=" col-span-3 border-t-2 border-landing-neon mt-2.5 w-20 ml-16"></div>
+          <span className=" col-span-3 uppercase">Experience</span>
+        </div>
+        <div className=" grid grid-cols-6 mb-2">
+          <div className=" col-span-3 border-t-2 border-landing-neon mt-2.5 w-20 ml-16"></div>
+          <span className=" col-span-3 uppercase">Projects</span>
+        </div>
+        <div className="justify-center row-span-2 flex gap-6">
           <a
             href="https://github.com/yourusername"
             target="_blank"
@@ -72,8 +109,7 @@ export default function SideBar() {
               <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
             </svg>
           </a>
-        </div>
-      </div>
+        </div> */}
     </div>
   );
 }

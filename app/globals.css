@@ -4,7 +4,9 @@
   --color-landing-grey: #090d0f;
   --color-landing-white: #ffffff;
   --color-landing-neon: #b8ce00;
-  --tracking-wide-20: 50px;
+  --tracking-wide-5: 5px;
+  --tracking-wide-10: 10px;
+  --tracking-wide-50: 50px;
 }
 
 /* Animación para el SVG dentro del componente ExperienceCard */
