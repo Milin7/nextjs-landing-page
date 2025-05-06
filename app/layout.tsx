@@ -26,7 +26,7 @@ export default function RootLayout({
         {/* <CustomCursor /> */}
         <div className="grid grid-cols-3 h-full">
           <SideBar />
-          <div className="col-span-2 h-full">{children}</div>
+          <main className="col-span-2 h-full scroller">{children}</main>
         </div>
       </body>
     </html>

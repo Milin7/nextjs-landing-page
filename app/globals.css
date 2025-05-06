@@ -9,20 +9,26 @@
   --tracking-wide-50: 50px;
   --border-width-1: 1.9px;
 }
-/* Scroll Snapping */
 
-/* html {
+/* Scroll Snapping */
+html {
   scroll-behavior: smooth;
 }
-.scroller {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
+
+body {
+  overflow: hidden;
 }
+
+.scroller {
+  overflow-y: auto;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
 .scroller section {
-  height: 100vh;
   scroll-snap-align: start;
-} */
-*/
+}
+
 /* Animación para el SVG dentro del componente ExperienceCard */
 
 .relative > svg {
