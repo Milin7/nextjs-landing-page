@@ -1,4 +1,4 @@
-import { JobItem } from "../types";
+import { JobItem, SectionItem } from "../types";
 
 export const jobs: JobItem[] = [
   {
@@ -26,6 +26,21 @@ export const jobs: JobItem[] = [
       role: "Front-end developer mid-level",
       description: "Build api, blaskfj alksjflajk",
     },
-    id: 2,
+    id: 3,
+  },
+];
+
+export const sections: SectionItem[] = [
+  {
+    id: 4,
+    title: "Experience",
+  },
+  {
+    id: 5,
+    title: "About me",
+  },
+  {
+    id: 6,
+    title: "Projects",
   },
 ];

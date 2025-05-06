@@ -3,6 +3,8 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "./components/CustomCursor";
 import SideBar from "./components/SideBar";
+import { jobs, sections } from "./data/db";
+import SectionCard from "./components/SectionCard";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",

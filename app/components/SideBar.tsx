@@ -4,9 +4,9 @@ export default function SideBar() {
       <div className=" fixed  text-landing-white col-span-1 grid grid-cols-1 grid-rows-10 h-96">
         <h1 className="">Life resume</h1>
         <h2 className=" font-bold text-3xl tracking-wider">Isaac Martínez</h2>
-        <h2 className=" uppercase tracking-normal text-lg pt-1">
+        <span className=" uppercase tracking-normal text-lg pt-1">
           Front End Developer
-        </h2>
+        </span>
         <div className="  row-span-8 text-landing-neon mt-20">
           <div className=" grid grid-cols-6 mb-2">
             <div className=" col-span-3 border-t-2 border-landing-neon mt-2.5 w-20 ml-16"></div>

@@ -1,18 +1,18 @@
-import { jobs } from "../data/db";
+import Link from "next/link";
+import { sections } from "../data/db";
 import ExperienceCard from "./ExperienceCard";
+import SectionCard from "./SectionCard";
 
 function ExperiencePage() {
   return (
     <>
-      <div className=" mt-10 mr-10">
-        <div className="border-2 text-white border-landing-neon rounded-xl p-7">
-          <h1 className=" uppercase text-landing-neon tracking-widest  text-2xl mt-2 ">
-            Experience
-          </h1>
-          {jobs.map((jobList) => (
-            <ExperienceCard jobList={jobList} key={jobList.id} />
-          ))}
-        </div>
+      <div>
+        {sections.map((section) => (
+          <SectionCard title={section.title} key={section.id} />
+        ))}
+      </div>
+      <div className=" text-landing-neon text-2xl mt-10">
+        <Link href="#section1">Section 1</Link>
       </div>
     </>
   );
