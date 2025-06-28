@@ -10,9 +10,10 @@ function ExperiencePage() {
       <div className="relative">
         {sections.map((section) => {
           return (
-            <>
-              <SectionCard title={section.title} key={section.id} />
-            </>
+            <SectionCard
+              title={section.title}
+              key={`${section.id}-${section.title}`}
+            />
           );
         })}
       </div>

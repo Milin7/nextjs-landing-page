@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Typography from "./Typography";
+import NavBar from "./NavBar";
+import HeadingTitle from "./HeadingTitle";
 
 export default function SideBar() {
   return (
@@ -7,61 +9,8 @@ export default function SideBar() {
       <div className="fixed text-landing-white col-span-1 grid grid-cols-1 grid-rows-10 h-96">
         {/* h1 SHOULD BE REPLACED for IM logo */}
         <div>
-          <Typography
-            component="h1"
-            variant="mainHeading"
-            className="flex justify-center"
-          >
-            Life resume{" "}
-          </Typography>
-          <div>
-            <Typography
-              component="h2"
-              mt="4"
-              variant="heading3"
-              className="text-4xl"
-            >
-              Isaac Martínez
-            </Typography>
-            <Typography component="span" mt="2" mb="32" variant="mainHeading">
-              Front End Developer
-            </Typography>
-          </div>
-          <Link href="#Aboutme">
-            <Typography
-              className="container mb-2"
-              variant="start"
-              component="div"
-              mt="24"
-            >
-              <div className="border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
-              <Typography component="h3" variant="heading4" color="neon">
-                about
-              </Typography>
-            </Typography>
-          </Link>
-
-          <Link href="#Experience">
-            <Typography
-              className="container mb-2"
-              variant="start"
-              component="div"
-            >
-              <div className="border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
-              <Typography component="h3" variant="heading4" color="neon">
-                experience
-              </Typography>
-            </Typography>
-          </Link>
-
-          <Link href="#Projects">
-            <Typography className="container" variant="start" component="div">
-              <div className="border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
-              <Typography component="h3" variant="heading4" color="neon">
-                Projects
-              </Typography>
-            </Typography>
-          </Link>
+          <HeadingTitle />
+          <NavBar />
         </div>
       </div>
 

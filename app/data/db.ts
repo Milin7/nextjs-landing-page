@@ -1,4 +1,5 @@
 import { EducationItem, JobItem, SectionItem } from "../types";
+import { useId } from "react";
 
 export const jobs: JobItem[] = [
   {
