@@ -7,16 +7,14 @@ import Typography from "./Typography";
 function ExperiencePage() {
   return (
     <>
-      <div className="relative">
-        {sections.map((section) => {
-          return (
-            <SectionCard
-              title={section.title}
-              key={`${section.id}-${section.title}`}
-            />
-          );
-        })}
-      </div>
+      {sections.map((section) => {
+        return (
+          <SectionCard
+            title={section.title}
+            key={`${section.id}-${section.title}`}
+          />
+        );
+      })}
     </>
   );
 }
