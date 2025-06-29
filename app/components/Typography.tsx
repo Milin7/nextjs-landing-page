@@ -9,7 +9,7 @@ type Props = {
   itemProp?: string;
   mb?: "0" | "2" | "4" | "6" | "8" | "12" | "16" | "20" | "24" | "32";
   mt?: "0" | "2" | "4" | "6" | "8" | "12" | "16" | "20" | "24" | "32";
-  variant:
+  variant?:
     | "heading1"
     | "heading2"
     | "heading3"
@@ -88,7 +88,7 @@ export default function Typography({
   variant,
   itemProp,
 }: PropsWithChildren<Props>) {
-  const baseStyles = variantStyles[variant];
+  const baseStyles = variant ? variantStyles[variant] : "";
   const colorStyle = colorStyles[color];
   const mbStyle = mb ? marginBottomStyles[mb] : "";
   const mtStyle = mt ? marginTopStyles[mt] : "";

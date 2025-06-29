@@ -10,27 +10,7 @@
   --border-width-1: 1.9px;
 }
 
-/* Scroll Snapping */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  overflow: hidden;
-}
-
-.scroller {
-  overflow-y: auto;
-  scroll-snap-type: y proximity;
-  scroll-behavior: smooth;
-}
-
-.scroller section {
-  scroll-snap-align: start;
-}
-
-/* Animación para el SVG dentro del componente ExperienceCard */
-
+/* Hover styles for Links and svg */
 .relative > svg {
   transition: all 0.35s ease-in-out;
 }
@@ -50,30 +30,4 @@ body {
 .icons:hover svg {
   transform: scale(1.2);
   filter: drop-shadow(0 0 5px rgba(184, 206, 0, 0.95));
-}
-
-/* Cursor personalizado con efecto neón */
-.custom-cursor {
-  position: fixed;
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(
-    circle,
-    rgba(184, 206, 0, 0.4) 0%,
-    rgba(184, 206, 0, 0.35) 5%,
-    rgba(184, 206, 0, 0.3) 15%,
-    rgba(184, 206, 0, 0.25) 25%,
-    rgba(184, 206, 0, 0.2) 35%,
-    rgba(184, 206, 0, 0.15) 45%,
-    rgba(184, 206, 0, 0.1) 55%,
-    rgba(184, 206, 0, 0.05) 65%,
-    rgba(184, 206, 0, 0) 75%
-  );
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: all 0.3s ease-out;
-  mix-blend-mode: screen;
-  opacity: 20%;
 }

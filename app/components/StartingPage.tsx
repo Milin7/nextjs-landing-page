@@ -1,24 +1,27 @@
-import Link from "next/link";
-import { sections } from "../data/db";
-import styles from "./SectionCard.module.css";
+import { jobs } from "../data/db";
+import AboutMeCard from "./AboutMeCard";
+import ExperienceCard from "./ExperienceCard";
 import SectionCard from "./SectionCard";
 import Typography from "./Typography";
 
-function ExperiencePage() {
+function StartingPage() {
   return (
     <>
-      <div className="relative">
-        {sections.map((section) => {
-          return (
-            <SectionCard
-              title={section.title}
-              key={`${section.id}-${section.title}`}
-            />
-          );
-        })}
-      </div>
+      <SectionCard title="About me">
+        <Typography variant="paragraph" color="white">
+          <AboutMeCard />
+        </Typography>
+      </SectionCard>
+      <SectionCard title="Experience">
+        {jobs.map((job) => (
+          <ExperienceCard key={job.id} jobList={job} />
+        ))}
+      </SectionCard>
+      <SectionCard title="Projects">
+        <div className="grid grid-cols-2 gap-4"></div>
+      </SectionCard>
     </>
   );
 }
 
-export default ExperiencePage;
+export default StartingPage;
