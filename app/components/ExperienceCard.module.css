@@ -1,5 +1,3 @@
-/* Animación para el SVG dentro del componente ExperienceCard */
-
 .relative > svg {
   transition: all 0.35s ease-in-out;
 }

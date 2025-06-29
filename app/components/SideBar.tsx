@@ -6,7 +6,6 @@ import HeadingTitle from "./HeadingTitle";
 export default function SideBar() {
   return (
     <>
-      {/* h1 SHOULD BE REPLACED for IM logo */}
       <HeadingTitle />
       <NavBar />
     </>
