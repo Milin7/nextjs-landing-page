@@ -2,10 +2,11 @@ import Link from "next/link";
 import Typography from "./Typography";
 import { sections } from "../data/db";
 import HeadingTitle from "./HeadingTitle";
+import styles from "./NavBarLinks.module.css";
 
 export const NavBarLinks = () => {
   return (
-    <div className="flex justify-center flex-col items-center ">
+    <div className="flex justify-center flex-col items-center">
       <HeadingTitle />
       <nav>
         <ul>
@@ -13,7 +14,7 @@ export const NavBarLinks = () => {
             <li key={section.id}>
               <Link href={`#${section.title}`}>
                 <Typography
-                  className="container place-self-center"
+                  className={`${styles.container} place-self-center`}
                   variant="start"
                   component="div"
                   mt="8"
