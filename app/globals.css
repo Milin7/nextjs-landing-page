@@ -9,3 +9,25 @@
   --tracking-wide-50: 50px;
   --border-width-1: 1.9px;
 }
+
+/* Hover styles for Links and svg */
+.relative > svg {
+  transition: all 0.35s ease-in-out;
+}
+.relative:hover > svg {
+  transform: scale(2);
+  filter: drop-shadow(0 0 5px rgba(184, 206, 0, 0.95));
+}
+.container {
+  transition: all 0.35s ease-in-out;
+}
+.container:hover {
+  transform: scale(1.2);
+  translate: 60px;
+  filter: drop-shadow(0 0 5px rgba(184, 206, 0, 0.95));
+}
+
+.icons:hover svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px rgba(184, 206, 0, 0.95));
+}

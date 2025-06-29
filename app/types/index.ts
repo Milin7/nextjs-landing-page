@@ -21,7 +21,3 @@ export interface EducationItem {
   degree: string;
   date: string;
 }
-
-export type ExperienceCardProps = {
-  jobList: JobItem;
-};
