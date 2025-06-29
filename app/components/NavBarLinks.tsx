@@ -1,29 +1,33 @@
 import Link from "next/link";
 import Typography from "./Typography";
 import { sections } from "../data/db";
+import HeadingTitle from "./HeadingTitle";
 
 export const NavBarLinks = () => {
   return (
-    <nav>
-      <ul>
-        {sections.map((section) => (
-          <li key={section.id}>
-            <Link href={`#${section.title}`}>
-              <Typography
-                className="container mb-2"
-                variant="start"
-                component="div"
-                mt="24"
-              >
-                <div className="link-left-line border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
-                <Typography component="h3" variant="heading4" color="neon">
-                  {section.title}
+    <div className="flex justify-center flex-col items-center ">
+      <HeadingTitle />
+      <nav>
+        <ul>
+          {sections.map((section) => (
+            <li key={section.id}>
+              <Link href={`#${section.title}`}>
+                <Typography
+                  className="container place-self-center"
+                  variant="start"
+                  component="div"
+                  mt="8"
+                >
+                  <div className="link-left-line border-t-1 border-landing-neon mt-4 w-20 mr-2"></div>
+                  <Typography component="h3" variant="heading4" color="neon">
+                    {section.title}
+                  </Typography>
                 </Typography>
-              </Typography>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 };

@@ -23,7 +23,6 @@ export default function RootLayout({
       <body
         className={`bg-landing-grey cursor-default ${montserrat.className} antialiased min-h-screen h-full`}
       >
-        {/* <CustomCursor /> */}
         <div className="grid grid-cols-3 h-full">
           <SideBar />
           <main className="col-span-2 h-full scroller">{children}</main>
