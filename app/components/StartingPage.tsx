@@ -1,4 +1,5 @@
 import { jobs } from "../data/db";
+import AboutMeCard from "./AboutMeCard";
 import ExperienceCard from "./ExperienceCard";
 import SectionCard from "./SectionCard";
 import Typography from "./Typography";
@@ -8,7 +9,7 @@ function StartingPage() {
     <>
       <SectionCard title="About me">
         <Typography variant="paragraph" color="white">
-          Tu contenido sobre ti aquí...
+          <AboutMeCard />
         </Typography>
       </SectionCard>
       <SectionCard title="Experience">

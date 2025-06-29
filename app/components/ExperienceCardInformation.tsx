@@ -1,4 +1,5 @@
 import { JobItem } from "../types";
+import TimeLineDot from "./TimeLineDot";
 import Typography from "./Typography";
 
 export default function ExperienceCardInformation({
@@ -6,33 +7,24 @@ export default function ExperienceCardInformation({
 }: {
   jobList: JobItem;
 }) {
+  const { name, role, date, description } = jobList.jobDetails;
   return (
-    <div className="relative">
-      <svg
-        width="8"
-        height="8"
-        viewBox="0 0 4 4"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-landing-neon absolute -left-[33px] top-1/2 -translate-y-1/2"
-      >
-        <circle cx="2" cy="2" r="2" fill="currentColor" />
-      </svg>
-
+    <div className="relative mb-8">
+      <TimeLineDot />
       <Typography component="h3" mb="2" variant="heading3">
-        {jobList.jobDetails.name}
+        {name}
       </Typography>
-
-      <ul>
-        <li>
-          <Typography component="p" variant="paragraph">
-            {jobList.jobDetails.role}
-            <br />
-            {jobList.jobDetails.date}
-            <br />
-            {jobList.jobDetails.description}
-          </Typography>
-        </li>
-      </ul>
+      <div className="flex justify-between">
+        <Typography component="p" variant="text-xl">
+          {role}
+        </Typography>
+        <Typography component="p" variant="paragraph">
+          {date}
+        </Typography>
+      </div>
+      <Typography component="p" variant="paragraph">
+        {description}
+      </Typography>
     </div>
   );
 }
