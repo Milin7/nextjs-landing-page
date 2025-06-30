@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <div className="grid grid-cols-3 h-full">
           <SideBar />
-          <main className="col-span-2 h-full scroller">{children}</main>
+          <main className="col-span-2 h-full">{children}</main>
         </div>
       </body>
     </html>
